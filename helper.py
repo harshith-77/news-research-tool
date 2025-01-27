@@ -1,5 +1,5 @@
 import logging
-from langchain.document_loaders import UnstructuredURLLoader
+from langchain.document_loaders import UnstructuredURLLoader, SeleniumURLLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 
@@ -7,7 +7,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def url_loader(urls):
     try:
-        loader = UnstructuredURLLoader(urls=urls, show_progress_bar=True)
+        # loader = UnstructuredURLLoader(urls=urls, show_progress_bar=True)
+        loader = SeleniumURLLoader(urls=urls)
         data = loader.load()
         logging.info(f"Loaded URLs: {data}")
         return data
