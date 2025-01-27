@@ -6,7 +6,7 @@ The **News Research Tool** is an AI-powered application that extracts and analyz
 ---
 
 ## ✨ Features
-- **RAG-Based Query Answering** – Combines retrieval and generation for accurate responses.
+- **RAG-Based Query Answering**: Combines retrieval and generation for accurate responses.
 - **Multi-Source News Extraction**: Input multiple news URLs to extract content automatically.
 - **Content Chunking & Vector Storage**: Processes and stores extracted text in a **FAISS** vector database.
 - **Intelligent Query Answering**: Retrieves the most relevant content chunks and generates accurate responses using the **Google Gemini API** (I have also included example using Ollama if you want to run the model on your local PC).
