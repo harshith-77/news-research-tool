@@ -28,7 +28,7 @@ Follow these steps to set up the News Research Tool:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/news-research-tool.git
+   git clone https://github.com/harshith-77/news-research-tool.git
    cd news-research-tool
 
 2. **Create a Virtual Environment (Optional but Recommended)**
